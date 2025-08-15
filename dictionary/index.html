@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>365Glossary</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/shortcutIcon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1 class="logo">
+        <i class="fa-solid fa-book-open"></i> <span>365</span>Glossary.
+      </h1>
+      <i class="fa-solid fa-moon dark" id="dark"></i>
+      <i class="fa-solid fa-sun" id="light"></i>
+    </nav>
+    <div class="container">
+      <div class="main">
+        <div class="search-box">
+          <input type="text" placeholder="Enter text here..." />
+          <button class="inactive">Search</button>
+        </div>
+        <div class="details">
+          <div class="word">
+            <h2>Hello</h2>
+            <i class="fa-solid fa-volume-high" id="speak"></i>
+          </div>
+          <div class="text">
+            <h3>Meaning</h3>
+            <p class="dark meaning"></p>
+          </div>
+          <div class="text">
+            <h3>Example</h3>
+            <p class="dark example"></p>
+          </div>
+          <div class="text">
+            <h3>synonyms</h3>
+            <p class="dark synonyms"></p>
+          </div>
+          <button class="more">More</button>
+        </div>
+        <div class="error">
+          <h3>Oops!</h3>
+          <p>No meaning found for this word.</p>
+        </div>
+      </div>
+      <div class="main2">
+        <i class="fa-solid fa-xmark closeBtn"></i>
+        <div class="details2"></div>
+      </div>
+    </div>
+
+    <audio src="" id="sound"></audio>
+    <script src="./script/script.js"></script>
+    <script src="./script/theme.js"></script>
+  </body>
+</html>

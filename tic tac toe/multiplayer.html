@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="game-container active">
+        <div class="turns">
+            <div class="turn active">X's Turn</div>
+            <div class="turn">O's Turn</div>
+        </div>
+        <div class="wrapper">
+            <div class="box" data-position="0"></div>
+            <div class="box" data-position="1"></div>
+            <div class="box" data-position="2"></div>
+            <div class="box" data-position="3"></div>
+            <div class="box" data-position="4"></div>
+            <div class="box" data-position="5"></div>
+            <div class="box" data-position="6"></div>
+            <div class="box" data-position="7"></div>
+            <div class="box" data-position="8"></div>
+        </div>
+    </div>
+    <div class="messege-container">
+        <h1>Player X won the game!</h1>
+        <button class="Replay">Replay</button>
+    </div>
+    <a href="index.html" class="active"><img src="./assets/computer.png" alt=""></a>
+
+    <audio src="./assets/move.mp3"></audio>
+    <audio src="./assets/win.mp3"></audio>
+    <audio src="./assets/lose.mp3"></audio>
+</body>
+<script src="app2.js"></script>
+
+</html>

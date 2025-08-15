@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>memory game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/blue.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="load-screen">
+      <img src="./assets/loader.gif" alt="" />
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="box" data-position="0"><span>?</span></div>
+        <div class="box" data-position="1"><span>?</span></div>
+        <div class="box" data-position="2"><span>?</span></div>
+        <div class="box" data-position="3"><span>?</span></div>
+        <div class="box" data-position="4"><span>?</span></div>
+        <div class="box" data-position="5"><span>?</span></div>
+        <div class="box" data-position="6"><span>?</span></div>
+        <div class="box" data-position="7"><span>?</span></div>
+        <div class="box" data-position="8"><span>?</span></div>
+        <div class="box" data-position="9"><span>?</span></div>
+        <div class="box" data-position="10"><span>?</span></div>
+        <div class="box" data-position="11"><span>?</span></div>
+        <div class="box" data-position="12"><span>?</span></div>
+        <div class="box" data-position="13"><span>?</span></div>
+        <div class="box" data-position="14"><span>?</span></div>
+        <div class="box" data-position="15"><span>?</span></div>
+      </div>
+      <div class="info">
+        <h1 class="time">
+          Time:
+          <p>90</p>
+          s
+        </h1>
+        <h1 class="flip">
+          Flips:
+          <p>0</p>
+        </h1>
+        <button class="refreshBtn">Refresh</button>
+      </div>
+    </div>
+
+    <audio src="./assets/move.mp3" class="audio1"></audio>
+    <audio src="./assets/win.mp3" class="audio2"></audio>
+    <audio src="./assets/lose.mp3" class="audio3"></audio>
+  </body>
+  <script src="app.js"></script>
+</html>

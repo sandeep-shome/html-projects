@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omega Watches</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        overflow: hidden;
+      }
+
+      .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 5%;
+      }
+
+      header .logo {
+        font-size: 16px;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      header ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+
+      header ul li {
+        font-size: 15px;
+        color: #000;
+        text-transform: uppercase;
+        list-style: none;
+        margin: 0 30px;
+      }
+
+      header ul li::after {
+        content: "";
+        display: block;
+        width: 0%;
+        margin-top: 5px;
+        height: 2px;
+        background-color: crimson;
+        border-radius: 30px;
+        transition: all 0.4s ease-in;
+      }
+
+      header ul li:hover::after {
+        width: 100%;
+      }
+
+      header .options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      i {
+        font-size: 20px;
+        margin: 0 30px;
+        cursor: pointer;
+      }
+
+      .line1 {
+        width: 12px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 18%;
+        background-color: rgb(245, 74, 0);
+      }
+
+      .line2 {
+        background-color: rgb(28, 28, 143);
+        width: 18px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 20%;
+      }
+
+      img {
+        width: 450px;
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-155%, -50%);
+      }
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-20%, -50%);
+      }
+
+      h4 {
+        font-size: 30px;
+        letter-spacing: 4px;
+        color: lightgrey;
+        text-transform: uppercase;
+        font-weight: 100;
+      }
+
+      h3 {
+        font-size: 75px;
+        color: #000;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+      }
+
+      button {
+        padding: 13px 20px;
+        border-radius: 6px;
+        background-color: rgb(245, 74, 0);
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 40px;
+      }
+
+      .social {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        bottom: 60px;
+        right: 30px;
+      }
+
+      .social i {
+        margin: 15px 0;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .social i:hover {
+        color: rgb(245, 74, 0);
+        transform: translateY(-3px);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Omega</h1>
+      <ul>
+        <li>collection</li>
+        <li>products</li>
+        <li>offers</li>
+        <li>contact</li>
+      </ul>
+      <div class="options">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="container">
+      <img src="watch.png" alt="" class="img" />
+      <div class="text">
+        <h4>speedmaster</h4>
+        <h3>moonwatch.</h3>
+        <button>order now</button>
+      </div>
+    </div>
+    <div class="social">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </body>
+</html>

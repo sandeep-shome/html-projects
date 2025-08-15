@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>age calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>javascript <br /><span> age calculator</span></h1>
+    <form action="" class="container">
+      <input type="date" name="" id="" />
+      <button type="submit">calculate</button>
+    </form>
+    <p>
+      You are <span>00</span> years <span>00</span> months <span>00</span> days
+      old
+    </p>
+  </body>
+
+  <script>
+    const input = document.querySelector("input"),
+      submitBtn = document.querySelector("button"),
+      infoText = document.querySelector("p"),
+      form = document.querySelector("form"),
+      infos = infoText.querySelectorAll("span");
+
+    const dateObj = new Date();
+    let currentYear = dateObj.getFullYear(),
+      currentMonth = dateObj.getMonth() + 1,
+      currentDay = dateObj.getDate();
+    //console.log(currentYear, currentMonth, currentDay);
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+    });
+
+    submitBtn.addEventListener("click", () => {
+      let dobArr = input.value.split("-"),
+        dobYear = parseInt(dobArr[0]),
+        dobMonth = parseInt(dobArr[1]),
+        dobDate = parseInt(dobArr[2]);
+      //console.log(dobYear, dobMonth, dobDate);
+      let yearOld = currentYear - dobYear;
+      let monthOld, daysOld;
+      if (dobMonth > currentMonth) {
+        yearOld--;
+        monthOld = 12 - (dobMonth - currentMonth);
+      } else {
+        monthOld = currentMonth - dobMonth;
+        if (monthOld == 0) {
+          monthOld = 12;
+        }
+      }
+
+      if (monthOld == 12) {
+        if (dobDate > currentDay) {
+          daysOld = dobDate - currentDay;
+          yearOld--;
+        } else {
+          daysOld = currentDay - dobDate;
+        }
+      } else {
+        daysOld = currentDay;
+      }
+
+      infos[0].innerHTML = yearOld;
+      infos[1].innerHTML = monthOld;
+      infos[2].innerHTML = daysOld;
+    });
+  </script>
+</html>
