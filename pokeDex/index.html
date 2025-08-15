@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pokeDex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>PokeDex</h1>
+    <p class="title">Is your pokemon on our codex?</p>
+
+    <div class="search-box">
+      <input
+        type="text"
+        placeholder="Enter pokemon name here..."
+        id="userInput"
+      />
+      <button><img src="./images/search2.png" alt="" id="search_btn" /></button>
+    </div>
+
+    <div class="card">
+      <div class="image">
+        <img src="./images/search2.png" alt="" />
+      </div>
+      <h2>charizard</h2>
+      <hr />
+      <div class="primary-info">
+        <h3 class="hp">
+          HP
+          <span></span>
+        </h3>
+        <h3 class="xp">XP <span></span></h3>
+      </div>
+      <button>transfer</button>
+      <div class="secondery-info">
+        <div class="tag type">
+          <p>fire/flying</p>
+          <h4>type</h4>
+        </div>
+        <div class="tag weight">
+          <p><span></span> kg</p>
+          <h4>weight</h4>
+        </div>
+        <div class="tag height">
+          <p><span></span> m</p>
+          <h4>height</h4>
+        </div>
+      </div>
+      <hr class="hr-2" />
+      <div class="third-info">
+        <div class="tag attack">
+          <p>2456</p>
+          <h4>attack</h4>
+        </div>
+        <div class="tag super_attack">
+          <p>163</p>
+          <h4>special attack</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="card error">
+      <h1 class="error-heading">Oops!</h1>
+      <p class="error-title">wired name, this pokemon does not registered</p>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

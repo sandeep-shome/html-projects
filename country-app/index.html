@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-box" id="search-form">
+        <input type="text" placeholder="Enter country name here..." />
+        <button disabled>Search</button>
+      </form>
+      <div class="result">
+        <div class="flag">
+          <div class="image">
+            <img src="" alt="" />
+          </div>
+          <span id="country_name"></span>
+        </div>
+        <div class="details">
+          <p>Capital: <span class="capital"></span></p>
+          <p>Continent: <span class="continent"></span></p>
+          <p>Officials: <span class="official"></span></p>
+          <p>Timezones: <span class="timezone"></span></p>
+          <p>Population: <span class="population"></span></p>
+          <p>Currency: <span class="currencies"></span></p>
+          <p>Common launguges: <span class="languages"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

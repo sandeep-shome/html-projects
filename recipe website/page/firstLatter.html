@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipeca-Firstlatter</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="../assets/logo2.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html" class="logo">
+        <i class="fa-solid fa-bowl-food"></i> Reci<span>Peca.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="firstLatter.html">First latter</a></li>
+        <li><a href="ingredient.html">Main ingredient</a></li>
+        <li><a href="area.html">Area</a></li>
+        <li><a href="random.html">Random</a></li>
+        <i class="fa-solid fa-xmark closeMenu"></i>
+      </ul>
+      <div class="menus">
+        <i class="fa-solid fa-bars menu"></i>
+      </div>
+    </nav>
+
+    <div class="search-area">
+      <div class="search-box">
+        <input
+          type="text"
+          placeholder="Enter food first latter here..."
+          maxlength="1"
+        />
+        <button>Search</button>
+      </div>
+    </div>
+
+    <div class="search-list"></div>
+
+    <div class="resultTextArea">
+      <p>Your result will be apper here</p>
+    </div>
+
+    <div class="error">
+      <h3>Oops!</h3>
+      <p>Did't find any food with</p>
+    </div>
+
+    <div class="details-area">
+      <div class="details">
+        <i class="fa-solid fa-xmark close closeDetail"></i>
+        <h1 class="foodName"></h1>
+        <h2>Ingredients</h2>
+        <div class="ingredients">
+          <ol></ol>
+        </div>
+        <h2>Recipe</h2>
+        <div class="recipe">
+          <p></p>
+        </div>
+        <a href="" class="youtube"
+          >Watch on Youtube <i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+    </div>
+
+    <div class="loader">
+      <img src="../assets/loader.gif" alt="" />
+    </div>
+
+    <div class="pre-loader">
+      <img src="../assets/loader.gif" alt="" />
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/firstLatter.js"></script>
+  </body>
+</html>

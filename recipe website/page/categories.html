@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipeca-categories</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="../assets/logo2.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html" class="logo">
+        <i class="fa-solid fa-bowl-food"></i> Reci<span>Peca.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="firstLatter.html">First latter</a></li>
+        <li><a href="ingredient.html">Main ingredient</a></li>
+        <li><a href="area.html">Area</a></li>
+        <li><a href="random.html">Random</a></li>
+        <i class="fa-solid fa-xmark closeMenu"></i>
+      </ul>
+      <div class="menus">
+        <i class="fa-solid fa-bars menu"></i>
+      </div>
+    </nav>
+
+    <div class="search-area">
+      <div class="search-box">
+        <input type="text" placeholder="Enter category here..." />
+        <button>Search</button>
+      </div>
+    </div>
+
+    <div class="categories">
+      <div data-cate="seafood" class="category">
+        <div class="image">
+          <img
+            src="https://www.licious.in/blog/wp-content/uploads/2022/02/shutterstock_1773695441-min.jpg"
+            alt=""
+          />
+        </div>
+        <p>seafood</p>
+      </div>
+      <div data-cate="Dessert" class="category">
+        <div class="image">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dessert-main-image-molten-cake-0fbd4f2.jpg"
+            alt=""
+          />
+        </div>
+        <p>Dessert</p>
+      </div>
+      <div data-cate="Starter" class="category">
+        <div class="image">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/2/2017/08/Tomato-Cover-V2.jpg?quality=45&resize=960,872"
+            alt=""
+          />
+        </div>
+        <p>Starter</p>
+      </div>
+      <div data-cate="Vegetarian" class="category">
+        <div class="image">
+          <img
+            src="https://www.vegetariantimes.com/wp-content/uploads/2005/05/zi3000-shutterstock-buddha-bowl.jpg"
+            alt=""
+          />
+        </div>
+        <p>Vegetarian</p>
+      </div>
+      <div data-cate="Breakfast" class="category">
+        <div class="image">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/breakfast-cereal-meal-granola-with-milk-pomegranate-royalty-free-image-1638397250.jpg"
+            alt=""
+          />
+        </div>
+        <p>Breakfast</p>
+      </div>
+      <div data-cate="Goat" class="category">
+        <div class="image">
+          <img
+            src="https://www.thespruceeats.com/thmb/PEM9oD2Us3ZbYDDeFqEnrPneFxc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/goat-mutton-curry-1957594-hero-01-afaf638173cd47d595c7ad99a018cf01.jpg"
+            alt=""
+          />
+        </div>
+        <p>Goat</p>
+      </div>
+      <div data-cate="Vegan" class="category">
+        <div class="image">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2018/06/Vegan-salad-bowl-499145d.jpg?quality=90&resize=556,505"
+            alt=""
+          />
+        </div>
+        <p>Vegan</p>
+      </div>
+      <div data-cate="Chicken" class="category">
+        <div class="image">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/fennel-roasted-chicken-and-peppers-1639692168.jpg"
+            alt=""
+          />
+        </div>
+        <p>Chicken</p>
+      </div>
+      <div data-cate="Beef" class="category">
+        <div class="image">
+          <img
+            src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FSeries%2F2019-09-snapshot-cooking-garlic-butter%2F2019-09-04_Kitchn83894_"
+            alt=""
+          />
+        </div>
+        <p>Beef</p>
+      </div>
+      <div data-cate="Pork" class="category">
+        <div class="image">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyY2iYU67PlceRWIVmSdZsJtRNoGODkL3LfQ&usqp=CAU"
+            alt=""
+          />
+        </div>
+        <p>Pork</p>
+      </div>
+    </div>
+
+    <div class="resultTextArea">
+      <p>Your result will be apper here</p>
+    </div>
+
+    <div class="search-list"></div>
+
+    <div class="error">
+      <h3>Oops!</h3>
+      <p>Did't find any food with</p>
+    </div>
+
+    <div class="details-area">
+      <div class="details">
+        <i class="fa-solid fa-xmark close closeDetail"></i>
+        <h1 class="foodName"></h1>
+        <h2>Ingredients</h2>
+        <div class="ingredients">
+          <ol></ol>
+        </div>
+        <h2>Recipe</h2>
+        <div class="recipe">
+          <p></p>
+        </div>
+        <a href="" class="youtube"
+          >Watch on Youtube <i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+    </div>
+
+    <div class="loader">
+      <img src="../assets/loader.gif" alt="" />
+    </div>
+
+    <div class="pre-loader">
+      <img src="../assets/loader.gif" alt="" />
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/categories.js"></script>
+  </body>
+</html>

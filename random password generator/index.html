@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random password generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>generate password</h1>
+        </header>
+        <div class="display">
+            <div class="display-area">
+                <input type="text" disabled id="textArea">
+                <button id="copy">copy</b>
+            </div>
+            <div class="password-level">
+                <div id="ind"></div>
+            </div>
+            <div class="pass-length">
+                <p>password length</p>
+                <span id="len">15</span>
+            </div>
+        </div>
+        <input type="range" max="30" min="1" step="1" value="15" class="range" id="inputRange">
+        <div class="btns">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="lowercase" checked style="opacity: 0.6;pointer-events:none;">
+                <label style="opacity: 0.6;pointer-events:none;" for="lowercase">Lowercase (a-z)</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="" id="uppercase">
+                <label for="uppercase">Uppercase (A-Z)</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="" id="symbol">
+                <label for="symbol">Symbols (!-/)</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="" id="number">
+                <label for="number">Numbers (0-9)</label>
+            </div>
+        </div>
+        <button id="btn">generate password</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

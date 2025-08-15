@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(154, 186, 201);
+}
+
+.container {
+    width: 36%;
+    border-radius: 4px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.2);
+    padding: 20px 10px;
+}
+
+.container .add {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container .add input {
+    width: 75%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(154, 186, 201);
+    font-size: 16px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.add button {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(154, 186, 201);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0.7;
+    user-select: none;
+}
+
+.add button.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+ol {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+ol::-webkit-scrollbar-track {
+    width: 2px;
+}
+
+ol::-webkit-scrollbar-thumb {
+    width: 2px;
+}
+
+ol li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 40px;
+    padding: 10px;
+    border-radius: inherit;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+ol li p {
+    font-size: 16px;
+}
+
+ol li span {
+    cursor: pointer;
+    color: red;
+}
+
+ol li span:hover {
+    color: rgb(209, 83, 83);
+}
+
+ol li:hover {
+    background-color: rgb(222, 227, 230);
+}
+
+ol {
+    scroll-behavior: smooth;
+}
+
+.rmvAll {
+    display: none;
+    padding: 10px;
+    margin: 20px auto 0;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(154, 186, 201);
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.rmvAll:hover {
+    background-color: rgb(218, 72, 72);
+}
+
+
+.rmvAll.active {
+    display: block;
+}
+
+
+@media(max-width: 450px) {
+    .container {
+        width: 90%;
+    }
+
+    .container .add button {
+        width: 90px;
+    }
+
+    .container .add input {
+        width: 70%;
+    }
+
+    ;
+}

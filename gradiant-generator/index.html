@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradint Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="colorShow"></div>
+      <div class="options">
+        <div class="select">
+          <p class="heading">Direction</p>
+          <select name="" id="">
+            <option value="left top">Left Top</option>
+            <option value="right top">Right Top</option>
+            <option value="left bottom">Left Bottom</option>
+            <option value="right bottom">right Bottom</option>
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+            <option value="up">Up</option>
+            <option value="down">Down</option>
+          </select>
+        </div>
+        <div class="colors">
+          <p class="heading">Colors</p>
+          <div class="colorsOpt">
+            <input type="color" class="input1" />
+            <input type="color" class="input2" />
+          </div>
+        </div>
+      </div>
+      <div class="text">
+        background-image: linear-gradient(to left top, rgb(93, 93, 212), rgb(94,
+        204, 94));
+      </div>
+      <div class="buttons">
+        <button class="refresh">Refresh Colors</button>
+        <button class="copy">copy Code</button>
+      </div>
+    </div>
+  </body>
+</html>

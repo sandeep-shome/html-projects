@@ -1,0 +1,26 @@
+let checkArr = equition.split("");
+        if (checkArr[checkArr.length - 1] == "+" || checkArr[checkArr.length - 1] == "-" || checkArr[checkArr.length - 1] == "*" || checkArr[checkArr.length - 1] == "/" || checkArr[checkArr.length - 1] == "%") {
+            checkArr.pop();
+            equition = checkArr.toString();
+            equition = + op.dataset.key;
+        }
+        else {
+            equition = + op.dataset.key;
+        }
+
+
+
+        opt.forEach(op => {
+    op.addEventListener("click", () => {
+        console.log(op.dataset.key);
+        let checkArr = equition.split("");
+        if (checkArr[checkArr.length - 1] == "+" || checkArr[checkArr.length - 1] == "-" || checkArr[checkArr.length - 1] == "*" || checkArr[checkArr.length - 1] == "/" || checkArr[checkArr.length - 1] == "%") {
+            checkArr.pop();
+            equition = checkArr.toString();
+            equition = + op.dataset.key;
+        }
+        else {
+            equition = + op.dataset.key;
+        }
+    })
+})
