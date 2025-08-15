@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Poppins&display=swap');
 
 *{
@@ -364,4 +365,372 @@ nav #light:hover::after {
     nav .logo{
         font-size: 19px;
     }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: #efefef;
+}
+
+body.dark{
+    background-color: #001a33;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 3%;
+    border-bottom: 1px solid lightgrey;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+}
+
+nav.dark{
+    background-color: #00284d;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.1);
+    border-bottom:none;
+}
+
+nav #dark{
+    color: #df80ff;
+}
+
+nav #light{
+    color: #29a329;
+    display: none;
+    cursor: pointer;
+}
+
+.logo{
+    font-size: 25px;
+    color: #df80ff;
+}
+
+.logo.dark{
+    color: #29a329;
+}
+
+.logo span{
+    color: #333;
+}
+
+.logo span.dark{
+    color: #efefef;
+    font-size: 20px;
+}
+
+nav .dark{
+    color: #df80ff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav #dark::after{
+    content: 'dark mode';
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    background-color: lightgrey;
+    color: #333;
+    font-size: 10px;
+    text-transform: none;
+    transition: all 0.4s ease-in-out;
+}
+
+nav .dark:hover::after{
+    display: flex;
+}
+
+nav #light::after {
+    content: 'light mode';
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    background-color: #00284d;
+    color: #efefef;
+    font-size: 10px;
+    text-transform: none;
+    transition: all 0.4s ease-in-out;
+}
+
+nav #light:hover::after {
+    display: flex;
+}
+
+.container{
+    width: 100%;
+   min-height:91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.container .main{
+    width: 30%;
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main.dark{
+    background-color: #00284d;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 3px 7px;
+}
+
+.main .search-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.main .search-box input{
+    width: 70%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid #df80ff;
+    background-color: transparent;
+}
+
+.main .search-box input.dark{
+    border-bottom: 1px solid #29a329;
+    color: #fff;
+}
+
+.main .search-box button.inactive {
+    opacity: 0.7;
+    pointer-events: none;
+    user-select: none;
+}
+
+.main .search-box button{
+    width: 25%;
+    height: 40px;
+    background-color: #df80ff;
+    color: #fff;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.search-box button.dark{
+    background-color: #29a329;
+}
+
+.details{
+    display: none;
+    background-color: transparent;
+}
+
+.main .word{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.word h2{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.word.dark h2 {
+    color: #efefef;
+}
+
+.word i{
+    font-size: 20px;
+    color: #df80ff;
+    cursor: pointer;
+}
+
+.word.dark i {
+    color: #29a329;
+}
+
+.text{
+    width: 100%;
+    margin: 6px 0;
+    padding: 0 0 6px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.text.dark{
+    border-bottom: 1px solid rgb(88, 88, 88);
+}
+
+.text h3{
+    font-size: 19px;
+    color: #df80ff;
+}
+
+.text.dark h3{
+    color: #29a329;
+}
+
+.text p{
+    font-size: 14px;
+    color: #333;
+}
+
+.text.dark p{
+    color: #efefef;
+}
+
+.error{
+    width: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.error h3{
+    font-size: 18px;
+    color: crimson;
+}
+
+.error p{
+    font-size: 15px;
+    color: crimson;
+}
+
+.more{
+    width: 25%;
+    height: 40px;
+    background-color: #df80ff;
+    color: #fff;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin:  10px auto 0;
+}
+
+.more.dark{
+    background-color: #29a329;
+}
+
+.main2{
+    margin: 16px 10px;
+    width: 30%;
+    background-color: #fff;
+    padding:20px 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
+    display: none;
+    flex-direction: column;
+    position: relative;
+}
+
+.main2.dark{
+    background-color: #00284d;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 3px 7px;
+}
+
+
+.main2 i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: crimson;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.main2.dark .text{
+    border-bottom: 1px solid rgb(88, 88, 88);
+}
+
+.main2.dark .text h3{
+    color: #29a329;
+}
+
+.main2.dark .text p{
+    color: #efefef;
+}
+
+.text h4{
+    font-size: 16px;
+    color: #df80ff;
+    margin: 5px 0 2px;
+}
+
+.main2.dark h4{
+    color: #29a329;
+}
+
+.text span{
+    display: block;
+    color: #333;
+    font-size: 13px;
+}
+
+.main2.dark span{
+    color: #efefef;
+}
+
+
+@media (max-width:1050px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .main {
+        width: 60%;
+    }
+
+    .container .main2 {
+        width: 60%;
+    }
+}
+
+@media (max-width:480px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .main {
+        width: 90%;
+    }
+
+    .container .main2 {
+        width: 90%;
+    }
+
+    nav .logo{
+        font-size: 19px;
+    }
+>>>>>>> 66e00288f11ccdd01980ccde9a6f42d62411087d
 }
